@@ -1,0 +1,11 @@
+.section7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-160, 160px);
+  align-self: stretch;
+  width: 100%;
+  background: var(--color-blue-primary, #05003d);
+  padding: var(--spacing-160, 160px) 0;
+}

@@ -1,0 +1,123 @@
+.section2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-56, 56px);
+  align-self: stretch;
+}
+
+.section2-title {
+  color: var(--color-black-black, #121212);
+  text-align: center;
+}
+
+.section2-logo-wrap {
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-32);
+  flex-shrink: 0;
+}
+
+.section2-logo-list {
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+  gap: 83px;
+}
+
+.section2-logo-list.second,
+.section2-logo-list-item.second {
+  gap: 104px;
+}
+
+.section2-logo-list.third,
+.section2-logo-list-item.third {
+  gap: 58px;
+}
+
+.section2-logo-list-item {
+  display: flex;
+  gap: 83px;
+  animation-name: section2-flow;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.section2-logo-list-item.reverse {
+  animation-name: section2-flow-reverse;
+}
+
+@keyframes section2-flow {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes section2-flow-reverse {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.section2-footer {
+  display: flex;
+  width: 100%;
+  max-width: 1280px;
+  padding: var(--spacing-24, 24px) var(--spacing-8, 8px);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-12, 12px);
+  border-radius: var(--radius-16, 16px);
+  background: var(--color-grey-10, #f6f6f7);
+}
+
+.section2-footer-text {
+  color: var(--color-black-black, #121212);
+  text-align: center;
+}
+
+/* ////////////////////// */
+@media all and (max-width: 1100px) {
+  .section2 {
+    gap: var(--spacing-32);
+  }
+  .section2-footer {
+    width: calc(100% - 40px);
+    max-width: 848px;
+    gap: var(--spacing-12);
+    padding: var(--spacing-16) 0;
+  }
+  .section2-footer > img {
+    width: 210px;
+  }
+
+  .section2-logo-wrap {
+    gap: var(--spacing-16);
+  }
+  .section2-logo-list,
+  .section2-logo-list-item {
+    gap: 58px;
+  }
+
+  .section2-logo-list.second,
+  .section2-logo-list-item.second {
+    gap: 72px;
+  }
+
+  .section2-logo-list.third,
+  .section2-logo-list-item.third {
+    gap: 40px;
+  }
+}

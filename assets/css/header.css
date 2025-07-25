@@ -1,0 +1,13 @@
+.logo {
+  width: 187px;
+  height: 32px;
+  aspect-ratio: 187/32;
+}
+header {
+  display: flex;
+  height: 64px;
+  padding: var(--spacing-0, 0px) var(--spacing-320---margin, 320px);
+  align-items: center;
+  gap: var(--spacing-0, 0px);
+  align-self: stretch;
+}

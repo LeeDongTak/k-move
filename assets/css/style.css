@@ -1,0 +1,241 @@
+main {
+  width: 100%;
+  height: auto;
+  padding: var(--spacing-160, 160px) 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-160, 160px);
+}
+
+.relative {
+  position: relative;
+}
+
+.Heading-1-bold {
+  font-family: var(--font-family, "Noto Sans CJK KR");
+  font-size: var(--Heading-1-font-size, 60px);
+  font-style: normal;
+  font-weight: var(--Heading-1-font-weight-700, 700);
+  line-height: var(--Heading-1-line-height, 78px); /* 130% */
+  letter-spacing: var(--Heading-1-letter-spacing, 0px);
+}
+.Heading-2-bold {
+  font-family: var(--font-family, "Noto Sans CJK KR");
+  font-size: var(--Heading-2-font-size, 48px);
+  font-style: normal;
+  font-weight: var(--Heading-2-font-weight-700, 700);
+  line-height: var(--Heading-2-line-height, 68px); /* 141.667% */
+  letter-spacing: var(--Heading-2-letter-spacing, 0px);
+}
+.Heading-3-bold {
+  font-family: var(--font-family, "Noto Sans CJK KR");
+  font-size: var(--Heading-3-font-size, 36px);
+  font-style: normal;
+  font-weight: var(--Heading-3-font-weight-700, 700);
+  line-height: var(--Heading-3-line-height, 52px); /* 144.444% */
+  letter-spacing: var(--Heading-3-letter-spacing, 0px);
+}
+.Heading-4-bold {
+  font-family: var(--font-family, "Noto Sans CJK KR");
+  font-size: var(--Heading-4-font-size, 24px);
+  font-style: normal;
+  font-weight: var(--Heading-4-font-weight-700, 700);
+  line-height: var(--Heading-4-line-height, 36px); /* 150% */
+  letter-spacing: var(--Heading-4-letter-spacing, 0px);
+}
+.Heading-2-medium {
+  font-family: var(--font-family, "Noto Sans CJK KR");
+  font-size: var(--Heading-2-font-size, 48px);
+  font-style: normal;
+  font-weight: var(--Heading-2-font-weight-500, 500);
+  line-height: var(--Heading-2-line-height, 68px); /* 141.667% */
+  letter-spacing: var(--Heading-2-letter-spacing, 0);
+}
+.Body_L {
+  font-family: var(--font-family, "Noto Sans CJK KR");
+  font-size: var(--Body_L-font-size, 18px);
+  font-style: normal;
+  font-weight: var(--Body_L-font-weight-500, 500);
+  line-height: var(--Body_L-line-height, 28px); /* 155.556% */
+  letter-spacing: var(--Body_L-letter-spacing, 0px);
+}
+.Body_M {
+  font-family: var(--font-family, "Noto Sans CJK KR");
+  font-size: var(--Body_M-font-size, 16px);
+  font-style: normal;
+  font-weight: var(--Body_M-font-weight-500, 500);
+  line-height: var(--Body_M-line-height, 24px); /* 150% */
+  letter-spacing: var(--Body_M-letter-spacing, 0);
+}
+.Body_S {
+  font-family: var(--font-family, "Noto Sans CJK KR");
+  font-size: var(--Body_S-font-size, 14px);
+  font-style: normal;
+  font-weight: var(--Body_S-font-weight-500, 500);
+  line-height: var(--Body_S-line-height, 22px); /* 157.143% */
+  letter-spacing: var(--Body_S-letter-spacing, 0);
+}
+.Button {
+  font-family: var(--font-family, "Noto Sans CJK KR");
+  font-size: var(--Button-font-size, 18px);
+  font-style: normal;
+  font-weight: var(--Button-font-weight-700, 700);
+  line-height: var(--Button-line-height, 28px); /* 155.556% */
+  letter-spacing: var(--Button-letter-spacing, 0px);
+}
+.Roboto_L {
+  font-family: Roboto;
+  font-size: 110px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: var(--letter-spacing-0, 0);
+}
+.Roboto_M {
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: var(--letter-spacing-0, 0);
+}
+
+.job-text {
+  font-family: var(--font-family, "Noto Sans CJK KR");
+  font-size: 12.045px;
+  font-style: normal;
+  font-weight: var(--Button-font-weight-700, 700);
+  line-height: 18.736px; /* 155.556% */
+}
+.section3-article1-card-button-text {
+  text-align: center;
+  font-family: var(--font-family, "Noto Sans CJK KR");
+  font-size: 14.015px;
+  font-style: normal;
+  font-weight: var(--Button-font-weight-700, 700);
+  line-height: 21.8px; /* 155.556% */
+}
+.section4-list-item-text-box-text {
+  color: var(--color-black-black, #121212);
+  text-align: center;
+  font-family: var(--font-family, "Noto Sans CJK KR");
+  font-size: 21.27px;
+  font-style: normal;
+  font-weight: var(--Heading-3-font-weight-700, 700);
+  line-height: 30.723px; /* 144.444% */
+}
+
+/* ///////// */
+@media all and (max-width: 1100px) {
+  main {
+    padding: var(--spacing-56) 0;
+    gap: var(--spacing-64);
+  }
+  .Heading-1-bold {
+    font-family: var(--font-family, "Noto Sans CJK KR");
+    font-size: var(--Heading-1-font-size, 24px);
+    font-style: normal;
+    font-weight: var(--Heading-1-font-weight-700, 700);
+    line-height: var(--Heading-1-line-height, 36px); /* 150% */
+    letter-spacing: var(--Heading-1-letter-spacing, 0);
+  }
+  .Heading-2-bold {
+    font-family: var(--font-family, "Noto Sans CJK KR");
+    font-size: var(--Heading-2-font-size, 24px);
+    font-style: normal;
+    font-weight: var(--Heading-2-font-weight-700, 700);
+    line-height: var(--Heading-2-line-height, 36px); /* 150% */
+    letter-spacing: var(--Heading-2-letter-spacing, 0);
+  }
+  .Heading-3-bold {
+    font-family: var(--font-family, "Noto Sans CJK KR");
+    font-size: var(--Heading-3-font-size, 24px);
+    font-style: normal;
+    font-weight: var(--Heading-3-font-weight-700, 700);
+    line-height: var(--Heading-3-line-height, 36px); /* 150% */
+    letter-spacing: var(--Heading-3-letter-spacing, 0);
+  }
+  .Heading-4-bold {
+    font-family: var(--font-family, "Noto Sans CJK KR");
+    font-size: var(--Heading-4-font-size, 18px);
+    font-style: normal;
+    font-weight: var(--Heading-4-font-weight-700, 700);
+    line-height: var(--Heading-4-line-height, 28px); /* 155.556% */
+    letter-spacing: var(--Heading-4-letter-spacing, 0);
+  }
+  .Body_L {
+    font-family: var(--font-family, "Noto Sans CJK KR");
+    font-size: var(--Body_L-font-size, 16px);
+    font-style: normal;
+    font-weight: var(--Body_L-font-weight-500, 500);
+    line-height: var(--Body_L-line-height, 24px); /* 150% */
+    letter-spacing: var(--Body_L-letter-spacing, 0);
+  }
+  .Body_M {
+    font-family: var(--font-family, "Noto Sans CJK KR");
+    font-size: var(--Body_M-font-size, 14px);
+    font-style: normal;
+    font-weight: var(--Body_M-font-weight-500, 500);
+    line-height: var(--Body_M-line-height, 22px); /* 157.143% */
+    letter-spacing: var(--Body_M-letter-spacing, 0);
+  }
+  .Body_S {
+    font-family: var(--font-family, "Noto Sans CJK KR");
+    font-size: var(--Body_S-font-size, 14px);
+    font-style: normal;
+    font-weight: var(--Body_S-font-weight-500, 500);
+    line-height: var(--Body_S-line-height, 22px); /* 157.143% */
+    letter-spacing: var(--Body_S-letter-spacing, 0);
+  }
+  .Button {
+    font-family: var(--font-family, "Noto Sans CJK KR");
+    font-size: var(--Button-font-size, 16px);
+    font-style: normal;
+    font-weight: var(--Button-font-weight-700, 700);
+    line-height: var(--Button-line-height, 24px); /* 150% */
+    letter-spacing: var(--Button-letter-spacing, 0);
+  }
+
+  .Roboto_L {
+    font-family: Roboto;
+    font-size: 64.992px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: var(--letter-spacing-0, 0);
+  }
+  .Roboto_M {
+    font-family: Roboto;
+    font-size: 28.36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: var(--letter-spacing-0, 0);
+  }
+
+  .job-text {
+    font-family: var(--font-family, "Noto Sans CJK KR");
+    font-size: 12.045px;
+    font-style: normal;
+    font-weight: var(--Button-font-weight-700, 700);
+    line-height: 18.736px; /* 155.556% */
+  }
+  .section3-article1-card-button-text {
+    text-align: center;
+    font-family: var(--font-family, "Noto Sans CJK KR");
+    font-size: 14.015px;
+    font-style: normal;
+    font-weight: var(--Button-font-weight-700, 700);
+    line-height: 21.8px; /* 155.556% */
+  }
+  .section4-list-item-text-box-text {
+    color: var(--color-black-black, #121212);
+    text-align: center;
+    font-family: var(--font-family, "Noto Sans CJK KR");
+    font-size: 21.27px;
+    font-style: normal;
+    font-weight: var(--Heading-3-font-weight-700, 700);
+    line-height: 30.723px; /* 144.444% */
+  }
+}
