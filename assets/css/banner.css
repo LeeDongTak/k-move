@@ -34,8 +34,6 @@
   width: 228px;
   height: 210px;
   flex-shrink: 0;
-
-  border-radius: var(--radius-32, 32px);
 }
 
 .job-list > li.focus {
@@ -61,19 +59,41 @@
   );
 }
 
-.job-list > li > img {
+.job-list > li > div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: var(--radius-32, 32px);
+  overflow: hidden;
+}
+
+.job-list > li > div > p {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 100%;
+  height: 100%;
   transform: translate(-50%, -50%);
-  width: calc(100% + 9px);
-  border-radius: var(--radius-32, 32px);
+  transition: all 300ms;
   opacity: 0;
   visibility: hidden;
-  transition: all 300ms;
+  background-color: red;
 }
 
-.job-list > li > img.active {
+.job-list > li > div > p > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.job-list > li > div > p > img.img1 {
+  object-position: bottom;
+}
+.job-list > li > div > p > img.img4 {
+  object-position: top;
+}
+
+.job-list > li > div > p.active {
   opacity: 1;
   visibility: visible;
 }

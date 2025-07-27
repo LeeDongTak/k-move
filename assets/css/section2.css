@@ -24,19 +24,18 @@
 
 .section2-logo-list {
   display: flex;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
   width: 100%;
-  gap: 83px;
 }
 
-.section2-logo-list.second,
 .section2-logo-list-item.second {
   gap: 104px;
+  padding-left: 104px;
 }
 
-.section2-logo-list.third,
 .section2-logo-list-item.third {
   gap: 58px;
+  padding-left: 58px;
 }
 
 .section2-logo-list-item {
@@ -46,6 +45,7 @@
   animation-duration: 40s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  padding-left: 83px;
 }
 
 .section2-logo-list-item.reverse {
@@ -106,18 +106,19 @@
   .section2-logo-wrap {
     gap: var(--spacing-16);
   }
-  .section2-logo-list,
+
   .section2-logo-list-item {
     gap: 58px;
+    padding-left: 58px;
   }
 
-  .section2-logo-list.second,
   .section2-logo-list-item.second {
     gap: 72px;
+    padding-left: 72px;
   }
 
-  .section2-logo-list.third,
   .section2-logo-list-item.third {
     gap: 40px;
+    padding-left: 40px;
   }
 }

@@ -255,10 +255,23 @@
     gap: var(--spacing-32, 32px);
   }
   .section3-article1-card-num-wrap {
+    width: auto;
+    justify-content: center;
+    gap: 4px;
+  }
+  .section3-article1-card-title-box {
     flex-direction: row;
+    justify-content: center;
+    width: auto;
+    padding: 0;
   }
   .section3-article1-card-num {
     width: 32px;
     height: 32px;
+  }
+  .section3-article1-card-title {
+    width: auto;
+    text-align: left;
+    background-color: red;
   }
 }

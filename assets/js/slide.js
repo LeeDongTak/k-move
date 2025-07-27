@@ -1,7 +1,8 @@
 $(document).ready(function () {
   $(".job-list > li").each(function () {
     const $li = $(this);
-    const $imgs = $li.find("img");
+    const $div = $li.find("div");
+    const $p = $div.find("p");
     const $itemTitle = $li.find(".item-title");
 
     // 첫 번째 index는 1로 시작
@@ -15,16 +16,17 @@ $(document).ready(function () {
       "IT/ 디지털",
     ];
     setInterval(() => {
-      $imgs.removeClass("active");
-      $imgs.eq(index).addClass("active");
+      console.log(index);
+      $p.removeClass("active");
+      $p.eq(index).addClass("active");
       $itemTitle.text(textArr[index]);
-      if (firstRun && $imgs.length > 5) {
+      if (firstRun && $p.length > 5) {
         // 다음엔 0부터 시작하게
         index = 0;
         firstRun = false;
       } else {
-        // 이후엔 순차적으로 증가
-        index = (index + 1) % $imgs.length;
+        // 이후엔 순차적으로 증가        console
+        index = (index + 1) % $p.length;
       }
     }, 2000);
   });
