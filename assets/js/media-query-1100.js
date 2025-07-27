@@ -166,9 +166,21 @@ function updateResponsiveClass() {
   });
 
   document.querySelectorAll(".section2-logo-list-item > img").forEach((img) => {
-    img.onload = () => {
-      img.style.width = img.naturalWidth * 0.6 + "px";
+    const applyResponsiveWidth = () => {
+      if (isMobile) {
+        img.style.width = img.naturalWidth * 0.6 + "px";
+      } else {
+        img.style.width = img.naturalWidth + "px";
+      }
     };
+
+    if (img.complete) {
+      // 이미 로드된 이미지
+      applyResponsiveWidth();
+    } else {
+      // 아직 로드 안 된 경우
+      img.onload = applyResponsiveWidth;
+    }
   });
 }
 
@@ -176,4 +188,8 @@ function updateResponsiveClass() {
 updateResponsiveClass();
 
 // 창 크기 변경될 때도 반응
-window.addEventListener("resize", updateResponsiveClass);
+let resizeTimeout;
+window.addEventListener("resize", () => {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(updateResponsiveClass, 100);
+});

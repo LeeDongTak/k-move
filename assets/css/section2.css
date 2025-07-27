@@ -1,3 +1,12 @@
+.cell {
+  float: left;
+}
+.row::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
 .section2 {
   width: 100%;
   display: flex;
@@ -24,28 +33,42 @@
 
 .section2-logo-list {
   display: flex;
-  /* flex-shrink: 0; */
-  width: 100%;
-}
-
-.section2-logo-list-item.second {
-  gap: 104px;
-  padding-left: 104px;
-}
-
-.section2-logo-list-item.third {
-  gap: 58px;
-  padding-left: 58px;
+  flex-shrink: 0;
 }
 
 .section2-logo-list-item {
-  display: flex;
-  gap: 83px;
+  position: relative;
+  width: max-content;
+  flex-shrink: 0;
+  white-space: nowrap;
   animation-name: section2-flow;
   animation-duration: 40s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  padding-left: 83px;
+}
+
+.section2-logo-list-item.first {
+  height: 46px;
+}
+
+.section2-logo-list-item.second {
+  height: 44px;
+}
+
+.section2-logo-list-item.third {
+  height: 40px;
+}
+
+.section2-logo-list-item.first > img {
+  margin-right: 83px;
+}
+
+.section2-logo-list-item.second > img {
+  margin-right: 104px;
+}
+
+.section2-logo-list-item.third > img {
+  margin-right: 58px;
 }
 
 .section2-logo-list-item.reverse {
@@ -70,6 +93,13 @@
   }
 }
 
+.section2-logo-list-item > img {
+  float: left;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .section2-footer {
   display: flex;
   width: 100%;
@@ -87,11 +117,17 @@
   color: var(--color-black-black, #121212);
   text-align: center;
 }
+.section2-footer-text > br {
+  display: none;
+}
 
 /* ////////////////////// */
 @media all and (max-width: 1100px) {
   .section2 {
     gap: var(--spacing-32);
+  }
+  .section2-title {
+    padding: 0 20px;
   }
   .section2-footer {
     width: calc(100% - 40px);
@@ -107,18 +143,24 @@
     gap: var(--spacing-16);
   }
 
-  .section2-logo-list-item {
-    gap: 58px;
-    padding-left: 58px;
+  .section2-logo-list-item.first > img {
+    height: calc(46px * 0.6);
+    margin-right: 58px;
   }
 
-  .section2-logo-list-item.second {
-    gap: 72px;
-    padding-left: 72px;
+  .section2-logo-list-item.second > img {
+    height: calc(44px * 0.6);
+    margin-right: 72px;
   }
 
-  .section2-logo-list-item.third {
-    gap: 40px;
-    padding-left: 40px;
+  .section2-logo-list-item.third > img {
+    height: calc(40px * 0.6);
+    margin-right: 40px;
+  }
+}
+
+@media all and (max-width: 510px) {
+  .section2-footer-text > br {
+    display: block;
   }
 }

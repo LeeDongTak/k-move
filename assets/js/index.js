@@ -1,6 +1,6 @@
 const section6CardList = document.querySelector(".section6 > ul");
 
-section6CardList.addEventListener("mouseover", (event) => {
+const handleMouseOver = (event) => {
   const clickedElement = event.target;
   const card = clickedElement.closest("li");
 
@@ -24,7 +24,25 @@ section6CardList.addEventListener("mouseover", (event) => {
       h6.classList.add("Heading-3-bold");
     }
   }
-});
+};
+
+let isMouseOverActive = false;
+
+const updateMouseOverBinding = () => {
+  const isMobile = window.innerWidth > 1100;
+
+  if (isMobile && !isMouseOverActive) {
+    section6CardList.addEventListener("mouseover", handleMouseOver);
+    isMouseOverActive = true;
+  } else if (!isMobile && isMouseOverActive) {
+    section6CardList.removeEventListener("mouseover", handleMouseOver);
+    isMouseOverActive = false;
+  }
+};
+
+updateMouseOverBinding();
+
+window.addEventListener("resize", updateMouseOverBinding);
 
 const section7CardList = document.querySelector(".section7 > .article3 > ul");
 

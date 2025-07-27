@@ -16,7 +16,6 @@ $(document).ready(function () {
       "IT/ 디지털",
     ];
     setInterval(() => {
-      console.log(index);
       $p.removeClass("active");
       $p.eq(index).addClass("active");
       $itemTitle.text(textArr[index]);

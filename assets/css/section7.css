@@ -9,3 +9,11 @@
   background: var(--color-blue-primary, #05003d);
   padding: var(--spacing-160, 160px) 0;
 }
+
+/* ////////////////// */
+@media all and (max-width: 1100px) {
+  .section7 {
+    gap: var(--spacing-78);
+    padding: var(--spacing-56) 0;
+  }
+}
